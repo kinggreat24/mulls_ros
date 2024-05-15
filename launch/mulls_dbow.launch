@@ -1,0 +1,7 @@
+<launch>
+    <node name="mulls_odom_node" type="bev_dbow_loop_node" pkg="mulls_ros" output="screen">
+        <param name="submap_dir" type="string" value="/media/kinggreat24/Samsung_T5/data/kitti_data_full/odometry/unzip/data/dataset/sequences/07/image_0"/>
+        <param name="voc_file" type="string" value="$(find mulls_ros)/Vocabulary/ORBvoc.txt.bin"/>
+        <param name="minAcceptScore" type="double" value="0.06"/>
+    </node>
+</launch>
